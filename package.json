@@ -1,0 +1,18 @@
+{
+  "name": "pwa-api",
+  "version": "1.0.1",
+  "description": "API for OWA term: 03/24",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

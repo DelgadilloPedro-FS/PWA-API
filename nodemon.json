@@ -1,0 +1,10 @@
+{
+  "ignore": ["node_modules/", "var/", "public/", ".git"],
+  "verbose": true,
+  "watch": ["index.js"],
+  "ext": "js,json,twig",
+  "env":{
+    "NODE_ENV":"development"
+  },
+  "exec": "js,json"
+}
