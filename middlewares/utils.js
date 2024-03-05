@@ -19,7 +19,7 @@ const vaildateEmail = (req, res, next) => {
   });
 };
 const vaildatePhone = (req, res, next) => {
-  const regex = /^(.*)$/;
+  const regex = /^\d{3}-\d{3}-\d{4}$/;
   if (regex.test(req.body.phone)) {
     return next();
   }
