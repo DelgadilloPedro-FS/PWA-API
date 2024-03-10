@@ -16,6 +16,7 @@ const vaildateEmail = (req, res, next) => {
   res.status(422).json({
     status: false,
     msg: "Email is not valid.",
+
   });
 };
 const vaildatePhone = (req, res, next) => {

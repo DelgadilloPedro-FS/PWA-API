@@ -1,11 +1,17 @@
-const express = require("express");
-const app = express();
-const userRouter = require("./routers/user.js");
+const express = require('express')
+const bodyParser = require('body-parser')
+const userRouter = require('./routers/user')
+
+const app = express()
 const PORT = 3000;
 
-app.use(express.json());
-app.use("/", userRouter);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use('/', userRouter)
+
 
 app.listen(PORT, () => {
-  console.log(`listening on PORT ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
+
