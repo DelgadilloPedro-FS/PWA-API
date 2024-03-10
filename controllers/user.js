@@ -1,5 +1,4 @@
 
-
 const signup = (req, res) => {
   res.status(200).json({
     message: "User has sucessfully signed up!",

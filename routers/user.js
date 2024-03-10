@@ -6,3 +6,4 @@ const utils = require('../middlewares/utils');
 router.post('/signup', utils.vaildateEmail, utils.vaildatePhone, utils.vaildateBirthday, utils.vaildatePassword, userCtlr.signup);
 
 module.exports = router;
+
