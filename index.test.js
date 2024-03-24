@@ -1,0 +1,1 @@
+const userTest = require('@petedillo/tests/index');
