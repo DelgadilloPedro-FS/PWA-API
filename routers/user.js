@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userCtlr = require('../controllers/user');
-const utils = require('../middlewares/utils');
+const utils = require('@petedillo/utils');
 
-router.post('/signup', utils.vaildateEmail, utils.vaildatePhone, utils.vaildateBirthday, utils.vaildatePassword, userCtlr.signup);
-
+router.post('/signup', utils.validateEmail, utils.validatePhone, utils.validateBirthday, utils.validatePassword, userCtlr.signup);
 module.exports = router;
